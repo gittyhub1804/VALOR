@@ -1,0 +1,25 @@
+
+let studentName: string = "Reimar";
+let score: number = 92;
+let passingScore: number = 75;
+let passed: boolean = score >= passingScore;
+
+reveal("=== VALOR GRADE EVALUATOR ===");
+reveal("Student Information");
+reveal(studentName);
+
+reveal("Score");
+reveal(score);
+
+if (passed) {
+    reveal("Result: PASSED");
+
+    if (score >= 90) {
+        reveal("Remark: EXCELLENT");
+    } else {
+        reveal("Remark: GOOD");
+    }
+} else {
+    reveal("Result: FAILED");
+    reveal("Remark: NEEDS IMPROVEMENT");
+}
