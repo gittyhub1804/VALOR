@@ -1,0 +1,8 @@
+let count: number = 1;
+
+while (count <= 5) {
+    reveal(count);
+    count = count + 1;
+}
+
+reveal("Loop finished");

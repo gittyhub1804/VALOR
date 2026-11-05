@@ -1,0 +1,19 @@
+let i: number = 1;
+
+while (i <= 15) {
+    if (i % 15 == 0) {
+        reveal("FizzBuzz");
+    } else {
+        if (i % 3 == 0) {
+            reveal("Fizz");
+        } else {
+            if (i % 5 == 0) {
+                reveal("Buzz");
+            } else {
+                reveal(i);
+            }
+        }
+    }
+
+    i = i + 1;
+}

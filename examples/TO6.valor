@@ -1,0 +1,11 @@
+let score: number = 40;
+
+if (score >= 60) {
+    if (score >= 90) {
+        reveal("Grade: A");
+    } else {
+        reveal("Grade: B");
+    }
+} else {
+    reveal("Grade: F");
+}

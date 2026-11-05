@@ -1,0 +1,11 @@
+fn countdown(n: number): number {
+    if (n <= 0) {
+        return 0;
+    } else {
+        return n + countdown(n - 1);
+    }
+}
+
+reveal(countdown(0));
+reveal(countdown(1));
+reveal(countdown(4));
