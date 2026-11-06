@@ -7,9 +7,9 @@ const { Parser } = require("./parser");
 const { SemanticAnalyzer } = require("./semantics");
 const { JavaScriptGenerator } = require("./codegen");
 
-const sourcePath = path.join(__dirname, "..", "examples", "TO8.valor");
+const sourcePath = path.join(__dirname, "..", "examples", "hello.valor");
 const outputDirectory = path.join(__dirname, "..", "dist");
-const outputPath = path.join(outputDirectory, "TO8.js");
+const outputPath = path.join(outputDirectory, "hello.js");
 
 try {
   // Stage 1: Lexical analysis

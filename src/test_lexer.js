@@ -5,7 +5,7 @@ const { tokenize } = require("./lexer");
 
 const filename = path.join(
   __dirname,
-  "../examples/TO8.valor"
+  "../examples/hello.valor"
 );
 
 try {
