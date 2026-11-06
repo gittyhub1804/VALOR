@@ -3,7 +3,7 @@ function __valorDivide(left, right) {
   return left / right;
 }
 
-let score = 40;
+let score = 95;
 if ((score >= 60)) {
   if ((score >= 90)) {
     console.log("Grade: A");

@@ -3,7 +3,7 @@ function __valorDivide(left, right) {
   return left / right;
 }
 
-let studentName = "Reimar";
+let studentName = "10";
 let score = 92;
 let passingScore = 75;
 let passed = (score >= passingScore);
