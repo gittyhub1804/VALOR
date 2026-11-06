@@ -7,9 +7,9 @@ const { Parser } = require("./parser");
 const { SemanticAnalyzer } = require("./semantics");
 const { JavaScriptGenerator } = require("./codegen");
 
-const sourcePath = path.join(__dirname, "..", "examples", "hello.valor");
+const sourcePath = path.join(__dirname, "..", "examples", "stringliteral.valor");
 const outputDirectory = path.join(__dirname, "..", "dist");
-const outputPath = path.join(outputDirectory, "hello.js");
+const outputPath = path.join(outputDirectory, "stringliteral.js");
 
 try {
   // Stage 1: Lexical analysis
