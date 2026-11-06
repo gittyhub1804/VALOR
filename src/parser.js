@@ -18,7 +18,12 @@ class Parser {
   }
 
   check(value) {
-    return !this.isAtEnd() && this.peek().value === value;
+    return (
+      !this.isAtEnd() &&
+      this.peek().type !== "STRING" &&
+      this.peek().type !== "NUMBER" &&
+      this.peek().value === value
+    );
   }
 
   advance() {
@@ -49,12 +54,19 @@ class Parser {
   }
 
   error(message) {
-    const token = this.peek();
+  const token = this.peek();
+  const previous = this.current > 0
+    ? this.tokens[this.current - 1]
+    : null;
 
-    return new Error(
-      `Parser error at '${token.value || "EOF"}': ${message}`
-    );
-  }
+  return new Error(
+    `Parser error at token #${this.current}: ` +
+    `type=${token.type}, ` +
+    `value=${JSON.stringify(token.value)}, ` +
+    `previous=${previous ? JSON.stringify(previous.value) : "none"}. ` +
+    message
+  );
+}
 
   parse() {
     const statements = [];

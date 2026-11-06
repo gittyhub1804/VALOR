@@ -1,1 +1,3 @@
-reveal("Hello, Welcome to My World!");
+let name: string = "VALOR";
+
+reveal("Hello, " + name + "!");

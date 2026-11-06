@@ -3,4 +3,5 @@ function __valorDivide(left, right) {
   return left / right;
 }
 
-console.log("Hello, Welcome to My World!");
+let name = "VALOR";
+console.log((("Hello, " + name) + "!"));
